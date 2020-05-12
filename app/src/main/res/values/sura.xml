@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sura_titles">
+        <item>Fotiha </item>
+        <item>Falaq</item>
+        <item>Al-Masad</item>
+        <item>Asr suras</item>
+        <item>Yasin</item>
+        <item>Mulk</item>
+        <item>Baqara</item>
+        <item>Alaq</item>
+        <item>Qadr</item>
+        <item>Qoria</item>
+
+    </string-array>
+
+
+</resources>

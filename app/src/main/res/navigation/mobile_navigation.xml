@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mynavigation.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_otherFragment"
+            app:destination="@id/otherFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_suraListFragment"
+            app:destination="@id/suraListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_homeFragment_to_tasbehFragment"
+            app:destination="@id/tasbehFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mynavigation.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/otherFragment"
+        android:name="com.example.mynavigation.OtherFragment"
+        android:label="Other"
+        tools:layout="@layout/fragment_other" />
+    <fragment
+        android:id="@+id/suraListFragment"
+        android:name="com.example.mynavigation.SuraListFragment"
+        android:label="Suralar"
+        tools:layout="@layout/fragment_sura_list">
+        <action
+            android:id="@+id/action_suraListFragment_to_suraFragment"
+            app:destination="@id/suraFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popUpTo="@id/suraListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/suraFragment"
+        android:name="com.example.mynavigation.SuraFragment"
+        android:label="fragment_sura"
+        tools:layout="@layout/fragment_sura" />
+    <fragment
+        android:id="@+id/tasbehFragment"
+        android:name="com.example.mynavigation.TasbehFragment"
+        android:label="fragment_tasbeh"
+        tools:layout="@layout/fragment_tasbeh" />
+</navigation>
