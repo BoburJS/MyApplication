@@ -10,11 +10,11 @@ public class HomeMenuList {
             new HomeMenuList("Намоз", R.drawable.namoz),
             new HomeMenuList("Суралар", R.drawable.sura),
             new HomeMenuList("Зикр ва Дуолар", R.drawable.duo),
-            new HomeMenuList("Тасбех", R.drawable.tasbeh),
-            new HomeMenuList("Тасбех", R.drawable.tasbeh),
-            new HomeMenuList("Тасбех", R.drawable.tasbeh),
-            new HomeMenuList("Тасбех", R.drawable.tasbeh),
-            new HomeMenuList("Тасбех", R.drawable.tasbeh),
+            new HomeMenuList("Тасбеҳ", R.drawable.tasbeh),
+            new HomeMenuList("Тасбеҳ", R.drawable.tasbeh),
+            new HomeMenuList("Тасбеҳ", R.drawable.tasbeh),
+            new HomeMenuList("Тасбеҳ", R.drawable.tasbeh),
+            new HomeMenuList("Тасбеҳ", R.drawable.tasbeh),
             new HomeMenuList("Шаходат", R.drawable.ic_islam)
 
     };

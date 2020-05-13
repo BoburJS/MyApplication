@@ -21,6 +21,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
+import java.util.Objects;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,24 +32,22 @@ import android.widget.TextView;
 public class TasbehFragment extends Fragment implements View.OnClickListener {
 
     private int counter = 0;
-    private int counterTotal = 33;
+    private int counterTotal = 34;
     private int countJami = 0;
-    private View view;
-    private RelativeLayout relativeLayout;
-    private TextView count, totalCount, jami;
-    private ImageView buttonImage, touch, refresh;
+    private TextView count, jami;
+    private ImageView buttonImage, touch;
     private CheckBox checkBox;
     private MediaPlayer clickmp3, resclickmp3;
-    private Toolbar toolbar;
+
 
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_tasbeh, container, false);
-        toolbar = view.findViewById(R.id.toolbar_tasbeh);
-        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+        View view = inflater.inflate(R.layout.fragment_tasbeh, container, false);
+        Toolbar toolbar = view.findViewById(R.id.toolbar_tasbeh);
+        ((AppCompatActivity) requireActivity()).setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_arrow_back_black_24dp));
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -57,16 +59,18 @@ public class TasbehFragment extends Fragment implements View.OnClickListener {
         Window window = getActivity().getWindow();
         window.setStatusBarColor(getResources().getColor(R.color.toolbarColor));
 
-        relativeLayout = view.findViewById(R.id.relativeLayout);
+        RelativeLayout relativeLayout = view.findViewById(R.id.relativeLayout);
         touch = view.findViewById(R.id.touch);
         buttonImage = view.findViewById(R.id.button_Image);
         clickmp3 = MediaPlayer.create(getContext(), R.raw.click);
         resclickmp3 = MediaPlayer.create(getContext(), R.raw.resetcount);
         count = view.findViewById(R.id.count);
-        totalCount = view.findViewById(R.id.totalCount);
-        refresh = view.findViewById(R.id.refresh);
+        TextView totalCount = view.findViewById(R.id.totalCount);
+        ImageView refresh = view.findViewById(R.id.refresh);
         checkBox = view.findViewById(R.id.sound);
         jami = view.findViewById(R.id.jami);
+
+
 
 
         refresh.setOnClickListener(new View.OnClickListener() {
@@ -79,7 +83,7 @@ public class TasbehFragment extends Fragment implements View.OnClickListener {
 
         relativeLayout.setOnClickListener(this);
         buttonImage.setOnClickListener(this);
-        totalCount.setText(String.valueOf(counterTotal));
+        totalCount.setText(String.valueOf(33));
         count.setText(String.valueOf(counter));
 
 
@@ -89,8 +93,15 @@ public class TasbehFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+
         countJami++;
-        jami.setText("Jami: " + String.valueOf(countJami));
+        jami.setText("Жами: " + countJami);
+        counter++;
+        soundSwitcher(checkBox.isChecked());
+        touch.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.shake));
+        buttonImage.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.shake));
+        count.setText(String.valueOf(counter));
+
         if (counter == counterTotal) {
             touch.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.shake2));
             buttonImage.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.shake2));
@@ -100,13 +111,9 @@ public class TasbehFragment extends Fragment implements View.OnClickListener {
                 reSoundSwitcher(checkBox.isChecked());
                 count.setText(String.valueOf(counter));
             }
-        } else {
-            counter++;
-            soundSwitcher(checkBox.isChecked());
-            touch.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.shake));
-            buttonImage.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.shake));
-            count.setText(String.valueOf(counter));
         }
+
+
     }
 
     private void soundSwitcher(boolean isCheck) {

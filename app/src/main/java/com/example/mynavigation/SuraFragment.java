@@ -32,6 +32,7 @@ public class SuraFragment extends Fragment {
 
 
 
+
         SuralarMassivParent[] oyat = sura.suraOyat;
 
         SuraAdapter2 adapter = new SuraAdapter2(oyat);

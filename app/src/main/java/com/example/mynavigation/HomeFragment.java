@@ -1,7 +1,9 @@
 package com.example.mynavigation;
 
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -10,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 
 
 /**
@@ -24,13 +27,18 @@ public class HomeFragment extends Fragment {
         super.onResume();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+
+
         //RecyclerView recyclerView = (RecyclerView) inflater.inflate(R.layout.fragment_home, container, false);
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        Window window = getActivity().getWindow();
+        window.setStatusBarColor(getResources().getColor(R.color.eeee));
         final String[] homeMenuName = new String[HomeMenuList.menular.length];
         for (int i = 0; i < homeMenuName.length; i++) {
             homeMenuName[i] = HomeMenuList.menular[i].getMenuName();
