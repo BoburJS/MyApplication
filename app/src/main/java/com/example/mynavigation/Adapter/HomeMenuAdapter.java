@@ -1,4 +1,4 @@
-package com.example.mynavigation;
+package com.example.mynavigation.Adapter;
 
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
@@ -12,7 +12,9 @@ import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-class HomeMenuAdapter extends RecyclerView.Adapter<HomeMenuAdapter.ViewHolder> {
+import com.example.mynavigation.R;
+
+public class HomeMenuAdapter extends RecyclerView.Adapter<HomeMenuAdapter.ViewHolder> {
 
     private String[] homeMenuName;
     private int[] homeMenuImage;
@@ -23,7 +25,7 @@ class HomeMenuAdapter extends RecyclerView.Adapter<HomeMenuAdapter.ViewHolder> {
         this.homeMenuImage = homeMenuImage;
     }
 
-    interface Listener{
+    public interface Listener{
         void onClick(int position);
     }
 

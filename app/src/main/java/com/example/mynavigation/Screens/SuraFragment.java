@@ -1,14 +1,16 @@
-package com.example.mynavigation;
+package com.example.mynavigation.Screens;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.example.mynavigation.Adapter.SuraAdapter2;
+import com.example.mynavigation.Models.OyatData;
+import com.example.mynavigation.Models.SuraData;
+import com.example.mynavigation.R;
 
 
 /**
@@ -28,11 +30,11 @@ public class SuraFragment extends Fragment {
         RecyclerView recyclerView = (RecyclerView) inflater.inflate(R.layout.fragment_sura, container, false);
 
 
-        SuraNamesMassiv sura = (SuraNamesMassiv) getArguments().getSerializable("suraKey");
+        SuraData sura = (SuraData) getArguments().getSerializable("suraKey");
 
 
 
-        SuralarMassivParent[] oyat = sura.suraOyat;
+        OyatData[] oyat = sura.suraOyat;
 
         SuraAdapter2 adapter = new SuraAdapter2(oyat);
         recyclerView.setAdapter(adapter);

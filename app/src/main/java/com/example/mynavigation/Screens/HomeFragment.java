@@ -1,4 +1,4 @@
-package com.example.mynavigation;
+package com.example.mynavigation.Screens;
 
 import android.os.Bundle;
 
@@ -10,6 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.mynavigation.Adapter.HomeMenuAdapter;
+import com.example.mynavigation.Models.HomeMenuData;
+import com.example.mynavigation.R;
 
 
 /**
@@ -31,13 +35,13 @@ public class HomeFragment extends Fragment {
         //RecyclerView recyclerView = (RecyclerView) inflater.inflate(R.layout.fragment_home, container, false);
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        final String[] homeMenuName = new String[HomeMenuList.menular.length];
+        final String[] homeMenuName = new String[HomeMenuData.menular.length];
         for (int i = 0; i < homeMenuName.length; i++) {
-            homeMenuName[i] = HomeMenuList.menular[i].getMenuName();
+            homeMenuName[i] = HomeMenuData.menular[i].getMenuName();
         }
-        int[] homeMenuImage = new int[HomeMenuList.menular.length];
+        int[] homeMenuImage = new int[HomeMenuData.menular.length];
         for (int i = 0; i < homeMenuName.length; i++) {
-            homeMenuImage[i] = HomeMenuList.menular[i].getMenuImage();
+            homeMenuImage[i] = HomeMenuData.menular[i].getMenuImage();
         }
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.menu_recycler);

@@ -22,4 +22,127 @@
     </string-array>
 
 
+    <!--Uzbek oyats-->
+    <string-array name="oyat_uzbekcha_0">
+        <item>Бисмилл`аҳир роҳм`анир роҳ`ийм 0</item>
+        <item>Ал ҳамдулилл`аҳи роббил ъ`алам`ийн.</item>
+        <item>Ар-роҳм`анир роҳ`ийм.</item>
+        <item>М`алики явмидд`ийн.</item>
+    </string-array>
+    <string-array name="oyat_uzbekcha_1">
+        <item>Бисмилл`аҳир роҳм`анир роҳ`ийм 1</item>
+        <item>Ал ҳамдулилл`аҳи роббил ъ`алам`ийн.</item>
+        <item>Ар-роҳм`анир роҳ`ийм.</item>
+        <item>М`алики явмидд`ийн.</item>
+    </string-array>
+    <string-array name="oyat_uzbekcha_2">
+        <item>Бисмилл`аҳир роҳм`анир роҳ`ийм 2</item>
+        <item>Ал ҳамдулилл`аҳи роббил ъ`алам`ийн.</item>
+        <item>Ар-роҳм`анир роҳ`ийм.</item>
+        <item>М`алики явмидд`ийн.</item>
+    </string-array>
+    <string-array name="oyat_uzbekcha_3">
+        <item>Бисмилл`аҳир роҳм`анир роҳ`ийм 3</item>
+        <item>Ал ҳамдулилл`аҳи роббил ъ`алам`ийн.</item>
+        <item>Ар-роҳм`анир роҳ`ийм.</item>
+        <item>М`алики явмидд`ийн.</item>
+    </string-array>
+    <string-array name="oyat_uzbekcha_4">
+        <item>Бисмилл`аҳир роҳм`анир роҳ`ийм 4</item>
+        <item>Ал ҳамдулилл`аҳи роббил ъ`алам`ийн.</item>
+        <item>Ар-роҳм`анир роҳ`ийм.</item>
+        <item>М`алики явмидд`ийн.</item>
+    </string-array>
+    <string-array name="oyat_uzbekcha_5">
+        <item>Бисмилл`аҳир роҳм`анир роҳ`ийм 5</item>
+        <item>Ал ҳамдулилл`аҳи роббил ъ`алам`ийн.</item>
+        <item>Ар-роҳм`анир роҳ`ийм.</item>
+        <item>М`алики явмидд`ийн.</item>
+    </string-array>
+    <string-array name="oyat_uzbekcha_6">
+        <item>Бисмилл`аҳир роҳм`анир роҳ`ийм 6</item>
+        <item>Ал ҳамдулилл`аҳи роббил ъ`алам`ийн.</item>
+        <item>Ар-роҳм`анир роҳ`ийм.</item>
+        <item>М`алики явмидд`ийн.</item>
+    </string-array>
+    <string-array name="oyat_uzbekcha_7">
+        <item>Бисмилл`аҳир роҳм`анир роҳ`ийм 7</item>
+        <item>Ал ҳамдулилл`аҳи роббил ъ`алам`ийн.</item>
+        <item>Ар-роҳм`анир роҳ`ийм.</item>
+        <item>М`алики явмидд`ийн.</item>
+    </string-array>
+    <string-array name="oyat_uzbekcha_8">
+        <item>Бисмилл`аҳир роҳм`анир роҳ`ийм 8</item>
+        <item>Ал ҳамдулилл`аҳи роббил ъ`алам`ийн.</item>
+        <item>Ар-роҳм`анир роҳ`ийм.</item>
+        <item>М`алики явмидд`ийн.</item>
+    </string-array>
+    <string-array name="oyat_uzbekcha_9">
+        <item>Бисмилл`аҳир роҳм`анир роҳ`ийм 9</item>
+        <item>Ал ҳамдулилл`аҳи роббил ъ`алам`ийн.</item>
+        <item>Ар-роҳм`анир роҳ`ийм.</item>
+        <item>М`алики явмидд`ийн.</item>
+    </string-array>
+<!--Arabic oyats-->
+    <string-array name="oyat_arab_0">
+        <item>0 بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</item>
+        <item> ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ</item>
+        <item>ٱلرَّحْمَٰنِ ٱلرَّحِيم</item>
+        <item>مَٰلِكِ يَوْمِ ٱلدِّينِ</item>
+    </string-array>
+    <string-array name="oyat_arab_1">
+        <item>1 بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</item>
+        <item> ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ</item>
+        <item>ٱلرَّحْمَٰنِ ٱلرَّحِيم</item>
+        <item>مَٰلِكِ يَوْمِ ٱلدِّينِ</item>
+    </string-array>
+    <string-array name="oyat_arab_2">
+        <item>2 بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</item>
+        <item> ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ</item>
+        <item>ٱلرَّحْمَٰنِ ٱلرَّحِيم</item>
+        <item>مَٰلِكِ يَوْمِ ٱلدِّينِ</item>
+    </string-array>
+    <string-array name="oyat_arab_3">
+        <item>3 بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</item>
+        <item> ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ</item>
+        <item>ٱلرَّحْمَٰنِ ٱلرَّحِيم</item>
+        <item>مَٰلِكِ يَوْمِ ٱلدِّينِ</item>
+    </string-array>
+    <string-array name="oyat_arab_4">
+        <item>4 بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</item>
+        <item> ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ</item>
+        <item>ٱلرَّحْمَٰنِ ٱلرَّحِيم</item>
+        <item>مَٰلِكِ يَوْمِ ٱلدِّينِ</item>
+    </string-array>
+    <string-array name="oyat_arab_5">
+        <item>5 بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</item>
+        <item> ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ</item>
+        <item>ٱلرَّحْمَٰنِ ٱلرَّحِيم</item>
+        <item>مَٰلِكِ يَوْمِ ٱلدِّينِ</item>
+    </string-array>
+    <string-array name="oyat_arab_6">
+        <item>6 بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</item>
+        <item> ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ</item>
+        <item>ٱلرَّحْمَٰنِ ٱلرَّحِيم</item>
+        <item>مَٰلِكِ يَوْمِ ٱلدِّينِ</item>
+    </string-array>
+    <string-array name="oyat_arab_7">
+        <item>7 بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</item>
+        <item> ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ</item>
+        <item>ٱلرَّحْمَٰنِ ٱلرَّحِيم</item>
+        <item>مَٰلِكِ يَوْمِ ٱلدِّينِ</item>
+    </string-array>
+    <string-array name="oyat_arab_8">
+        <item>8 بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</item>
+        <item> ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ</item>
+        <item>ٱلرَّحْمَٰنِ ٱلرَّحِيم</item>
+        <item>مَٰلِكِ يَوْمِ ٱلدِّينِ</item>
+    </string-array>
+    <string-array name="oyat_arab_9">
+        <item>9 بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</item>
+        <item> ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ</item>
+        <item>ٱلرَّحْمَٰنِ ٱلرَّحِيم</item>
+        <item>مَٰلِكِ يَوْمِ ٱلدِّينِ</item>
+    </string-array>
+
 </resources>

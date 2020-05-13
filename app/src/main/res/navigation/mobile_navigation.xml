@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.mynavigation.HomeFragment"
+        android:name="com.example.mynavigation.Screens.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -29,17 +29,17 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.mynavigation.SettingsFragment"
+        android:name="com.example.mynavigation.Screens.SettingsFragment"
         android:label="Settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/otherFragment"
-        android:name="com.example.mynavigation.OtherFragment"
+        android:name="com.example.mynavigation.Screens.OtherFragment"
         android:label="Other"
         tools:layout="@layout/fragment_other" />
     <fragment
         android:id="@+id/suraListFragment"
-        android:name="com.example.mynavigation.SuraListFragment"
+        android:name="com.example.mynavigation.Screens.SuraListFragment"
         android:label="Suralar"
         tools:layout="@layout/fragment_sura_list">
         <action
@@ -51,12 +51,12 @@
     </fragment>
     <fragment
         android:id="@+id/suraFragment"
-        android:name="com.example.mynavigation.SuraFragment"
+        android:name="com.example.mynavigation.Screens.SuraFragment"
         android:label="fragment_sura"
         tools:layout="@layout/fragment_sura" />
     <fragment
         android:id="@+id/tasbehFragment"
-        android:name="com.example.mynavigation.TasbehFragment"
+        android:name="com.example.mynavigation.Screens.TasbehFragment"
         android:label="fragment_tasbeh"
         tools:layout="@layout/fragment_tasbeh" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.mynavigation;
+package com.example.mynavigation.Screens;
 
 import android.media.MediaPlayer;
 import android.os.Build;
@@ -20,6 +20,8 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.mynavigation.R;
 
 
 /**

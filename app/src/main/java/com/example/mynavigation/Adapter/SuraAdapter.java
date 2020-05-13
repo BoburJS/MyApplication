@@ -1,4 +1,4 @@
-package com.example.mynavigation;
+package com.example.mynavigation.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -8,11 +8,15 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-class SuraAdapter2 extends RecyclerView.Adapter<SuraAdapter2.ViewHolder> {
-    private SuralarMassivParent[] oyat;
+import com.example.mynavigation.R;
 
-    public SuraAdapter2(SuralarMassivParent[] oyat) {
-        this.oyat = oyat;
+class SuraAdapter extends RecyclerView.Adapter<SuraAdapter.ViewHolder> {
+    private String[] c;
+    private String[] suraDefault;
+
+    public SuraAdapter(String[] suraArab, String[] suraDefault) {
+        this.c = suraArab;
+        this.suraDefault = suraDefault;
     }
 
     @NonNull
@@ -21,21 +25,20 @@ class SuraAdapter2 extends RecyclerView.Adapter<SuraAdapter2.ViewHolder> {
         CardView cv = (CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.row_sura, parent, false);
         return new ViewHolder(cv);
     }
-
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final CardView cardView = holder.cardView;
 
         TextView textArab = cardView.findViewById(R.id.oyatArab);
-        textArab.setText(oyat[position].suraArab);
+        textArab.setText(c[position]);
 
         TextView textDefault = cardView.findViewById(R.id.oyatDefault);
-        textDefault.setText(oyat[position].suraDefault);
+        textDefault.setText(suraDefault[position]);
     }
 
     @Override
     public int getItemCount() {
-        return oyat.length;
+        return suraDefault.length;
     }
 
 

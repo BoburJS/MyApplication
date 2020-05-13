@@ -1,4 +1,4 @@
-package com.example.mynavigation;
+package com.example.mynavigation.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,8 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-class SuraListAdapter extends RecyclerView.Adapter<SuraListAdapter.ViewHolder> {
-    private SuraNamesMassiv[] suraMassiv;
+import com.example.mynavigation.Models.SuraData;
+import com.example.mynavigation.R;
+
+public class SuraListAdapter extends RecyclerView.Adapter<SuraListAdapter.ViewHolder> {
+    private SuraData[] suraMassiv;
     private Listener listener;
 
     @NonNull
@@ -43,12 +46,12 @@ class SuraListAdapter extends RecyclerView.Adapter<SuraListAdapter.ViewHolder> {
         return suraMassiv.length;
     }
 
-    interface Listener {
-        void onClick(SuraNamesMassiv singleSura);
+    public interface Listener {
+        void onClick(SuraData singleSura);
     }
 
 
-    public SuraListAdapter(SuraNamesMassiv[] suraMassiv) {
+    public SuraListAdapter(SuraData[] suraMassiv) {
         this.suraMassiv = suraMassiv;
     }
 
